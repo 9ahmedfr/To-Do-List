@@ -3,9 +3,8 @@ import { useState } from "react"
 
 export default function TodoInput(props) {
 
-  const {handleAddTodos} = props
-  const [todoValue, setTodoValue] = useState('')
-
+  const {todoValue, setTodoValue, handleAddTodos} = props
+  
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       handleAddTodos(todoValue)
