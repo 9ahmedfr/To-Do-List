@@ -92,6 +92,7 @@ p {
 }
 
 .actionsContainer button {
+  font-size: 1em;
   transition-duration: 200ms;
   border: none;
   background: transparent;

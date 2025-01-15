@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function TodoCard(props) {
-  const {children} = props
+  const {handleDeleteTodo, children, index} = props
   return (
     <li className='todoItem'>
       {children}
@@ -9,7 +9,7 @@ export default function TodoCard(props) {
         <button>
           <i className="fa-solid fa-pen-to-square"></i>
         </button>
-        <button>
+        <button onClick={() => handleDeleteTodo(index)}>
           <i className="fa-regular fa-trash-can"></i>
         </button>
       </div>
